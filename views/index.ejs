@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Messages</title>
+  </head>
+  <body>
+    <h1>Messages</h1>
+    <ul>
+      <% messages.forEach((message) => { %>
+        <li>
+          <strong>User:</strong> <%= message.user %><br>
+          <strong>Text:</strong> <%= message.text %><br>
+          <strong>Date:</strong> <%= message.added.toDateString() %>
+        </li>
+      <% }); %>
+    </ul>
+  </body>
+</html>
